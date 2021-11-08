@@ -96,6 +96,7 @@ function App() {
         <DateTimePicker
           onChange={(value) => setState({...state, date: value})}
           value={state.date}
+          disableClock={true}
         />
         <div>
           <ul className="radioList">
