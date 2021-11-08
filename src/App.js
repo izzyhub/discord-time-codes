@@ -14,7 +14,6 @@ function App() {
     ? navigator.language
     : navigator.languages[0];
 
-  console.log('state: ', state);
   const options = [
     {
       codeLetter: "d",
@@ -54,21 +53,11 @@ function App() {
 
   ];
 
-  console.log("state.date: ", state.date);
-  console.log("timestamp?: ", state.date.getTime());
   const discordTimeCode = "<t: " + state.date.getTime() + ":" + options[state.optionSelected].codeLetter + ">";
 
   const copyTimeCode = () => {
     navigator.clipboard.writeText(discordTimeCode);
   };
-
-
-  console.log('browserLocale: ', browserLocale);
-  //console.log('example: ', value.toLocaleString(browserLocale, {day: 'numeric', month: 'numeric', year: 'numeric'}));
-  //console.log('example: ', value.toLocaleString(browserLocale, {hourCyle: 12, day: 'numeric', month: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit'}));
-  //console.log('example: ', value.toLocaleString(browserLocale, {hourCyle: 12, weekday: 'long', hour: 'numeric', minute: '2-digit'}));
-  //console.log('example: ', value.toLocaleString(browserLocale, {hourCyle: 12, hour: 'numeric', minute: '2-digit'}));
-
 
   const radio = options.map((option, index) => {
     const isSelected = index === state.optionSelected;
