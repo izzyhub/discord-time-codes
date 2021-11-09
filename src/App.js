@@ -76,7 +76,7 @@ function App() {
             onChange={onNewSelection}
           >
           </input>
-          {option.label + ": "} <b>{option.example}</b>
+          {option.example}
         </label>
       </li>
     )
