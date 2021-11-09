@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import DateTimePicker from 'react-datetime-picker';
+import Footer from './Footer.js';
 import './App.css';
 
 
@@ -110,6 +111,7 @@ function App() {
           <button onClick={copyTimeCode}>Copy</button>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
