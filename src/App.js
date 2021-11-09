@@ -48,7 +48,7 @@ function App() {
     {
       codeLetter: "T",
       label: "Time with seconds",
-      example: state.date.toLocaleString(browserLocale, {hourCyle: 12, hour: 'numeric', minute: '2-digit', secondsa: '2-digit'}),
+      example: state.date.toLocaleString(browserLocale, {hourCyle: 12, hour: 'numeric', minute: '2-digit', second: '2-digit'}),
     },
 
   ];
