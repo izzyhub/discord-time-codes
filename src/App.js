@@ -53,8 +53,9 @@ function App() {
     },
 
   ];
+  const unixTime = Math.floor(state.date.getTime() / 1000)
 
-  const discordTimeCode = "<t: " + state.date.getTime() + ":" + options[state.optionSelected].codeLetter + ">";
+  const discordTimeCode = "<t:" + unixTime + ":" + options[state.optionSelected].codeLetter + ">";
 
   const copyTimeCode = () => {
     navigator.clipboard.writeText(discordTimeCode);
